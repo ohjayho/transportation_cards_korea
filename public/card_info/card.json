@@ -1,44 +1,44 @@
 [
   {
     "category": ["transportation"],
-    "title": "T-money",
+    "name": "T-money",
     "price": "￦3,000 ~ ￦6,000",
-    "image": ""
+    "img": "/card_imgs/tmoney.jpg"
   },
   {
     "category": ["transportation"],
-    "title": "Cashbee (LOCA Mobilitiy)",
+    "name": "Cashbee (LOCA Mobilitiy)",
     "price": "￦3,000 ~ ￦6,000",
-    "image": ""
+    "img": "/card_imgs/cashbee.png"
   },
   {
     "category": ["transportation"],
-    "title": "Climate Card",
+    "name": "Climate Card",
     "price": "￦3,000",
-    "image": ""
+    "img": "/card_imgs/climate_card.jpg"
   },
   {
     "category": ["transportation", "debit"],
-    "title": "WOWPASS",
+    "name": "WOWPASS",
     "price": "￦0 ~ ￦5,000",
-    "image": ""
+    "img": "/card_imgs/wowpass.png"
   },
   {
     "category": ["transportation", "debit"],
-    "title": "NAMANE Card",
+    "name": "NAMANE Card",
     "price": "￦7,000",
-    "image": ""
+    "img": "/card_imgs/namane.png"
   },
   {
     "category": ["transportation", "City Pass"],
-    "title": "Discover Seoul Pass",
+    "name": "Discover Seoul Pass",
     "price": "￦50,000 ~ ￦90,000",
-    "image": ""
+    "img": "/card_imgs/dsp.png"
   },
   {
     "category": ["transportation"],
-    "title": "Metropolitan MPass",
+    "name": "Metropolitan MPass",
     "price": "￦15,000 ~ ￦64,500",
-    "image": ""
+    "img": "/card_imgs/mpass.png"
   }
 ]

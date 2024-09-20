@@ -1,0 +1,44 @@
+[
+  {
+    "category": ["transportation"],
+    "title": "T-money",
+    "price": "￦3,000 ~ ￦6,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation"],
+    "title": "Cashbee (LOCA Mobilitiy)",
+    "price": "￦3,000 ~ ￦6,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation"],
+    "title": "Climate Card",
+    "price": "￦3,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation", "debit"],
+    "title": "WOWPASS",
+    "price": "￦0 ~ ￦5,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation", "debit"],
+    "title": "NAMANE Card",
+    "price": "￦7,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation", "City Pass"],
+    "title": "Discover Seoul Pass",
+    "price": "￦50,000 ~ ￦90,000",
+    "image": ""
+  },
+  {
+    "category": ["transportation"],
+    "title": "Metropolitan MPass",
+    "price": "￦15,000 ~ ￦64,500",
+    "image": ""
+  }
+]

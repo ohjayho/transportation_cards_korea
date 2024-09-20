@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container {
+  perspective: 1000px;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
+}
+
+.carousel-item {
+  transition: opacity 1s ease;
+  left: 50px;
+}

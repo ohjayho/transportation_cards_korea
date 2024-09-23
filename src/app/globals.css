@@ -8,16 +8,14 @@ body {
   height: 100%;
 }
 
-.carousel-container {
-  perspective: 1000px;
-}
-
-.carousel {
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-}
-
-.carousel-item {
-  transition: opacity 1s ease;
-  left: 50px;
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

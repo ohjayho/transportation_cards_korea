@@ -122,9 +122,9 @@ export default function CardsCarousel() {
             ))}
         </div>
       </div>
-      <div className="w-[200px] h-[40px] flex justify-between mt-[350px]">
+      <div className="w-[200px] h-[40px] flex justify-between mt-[280px]">
         <button
-          className={`w-20 p-1 bg-white rounded-md border border-sky-100 bg-transparent font-extrabold text-white  ${
+          className={`w-20 p-1 rounded-md border border-sky-100 bg-[#fafafa] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={prevHandler}
@@ -132,7 +132,7 @@ export default function CardsCarousel() {
           Previous
         </button>
         <button
-          className={`w-20 p-1 bg-white rounded-md border border-sky-100 bg-transparent font-extrabold text-white  ${
+          className={`w-20 p-1 rounded-md border border-sky-100 bg-[#fafafa] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={nextHandler}

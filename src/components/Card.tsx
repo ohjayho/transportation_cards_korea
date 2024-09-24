@@ -50,20 +50,28 @@ export default function Card({
             width={300}
             height={300}
             alt={card.name}
-            className="w-full h-full absolute [backface-visibility:hidden] transition-transform duration-1000"
+            className="w-full h-full absolute [backface-visibility:hidden] transition-transform duration-1000 object-cover rounded-md [image-rendering:optimizeQuality]"
             style={{
               transform: cardClick ? "rotateY(180deg)" : "rotateY(0deg)"
             }}
           />
           <div
-            className={`w-full h-full bg-red-300 rounded-md transition-all duration-1000 [backface-visibility:hidden]`}
+            className={`w-full h-full bg-white rounded-md transition-all duration-1000 [backface-visibility:hidden] p-1`}
             style={{
               transform: cardClick ? "rotateY(0deg)" : "rotateY(-180deg)"
             }}
           >
-            <h1>{card.name}</h1>
-            <h1>{card.category}</h1>
-            <h1>{card.price}</h1>
+            <div className="h-full border border-black rounded-md flex flex-col items-center text-[10px] p-2">
+              <h1 className="text-[12px] mb-2">{card.name}</h1>
+              <div className="flex justify-between">
+                {card.category.map((category) => (
+                  <div className="text-[8px] bg-red-400 text-center px-1 rounded-sm text-white mr-2 last:mr-0 mb-2">
+                    {category}
+                  </div>
+                ))}
+              </div>
+              <h1>{card.price}</h1>
+            </div>
           </div>
         </div>
       </div>

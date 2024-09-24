@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Card from "./Card";
+import { BASE_API_URL } from "../../utils/constants";
 
 export type TCard = {
   category: Array<string>;
@@ -24,7 +25,7 @@ export default function CardsCarousel() {
   useEffect(() => {
     const fetchCards = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/cards");
+        const response = await fetch(`${BASE_API_URL}/api/cards`);
         const cardData: TCard[] = await response.json();
         if (cardData) {
           const countCards = cardData.length;

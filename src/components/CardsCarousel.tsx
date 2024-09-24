@@ -58,9 +58,10 @@ export default function CardsCarousel() {
     );
   };
 
-  const filterHandler = (e: any) => {
+  const filterHandler = (e: MouseEvent) => {
+    const eventTarget = e.target as HTMLElement;
     const filteredCards = initialCards.filter((card) =>
-      card.category.includes(e?.target?.innerText)
+      card.category.includes(eventTarget.innerText)
     );
     const countCards = filteredCards.length;
     setTheta(360 / countCards);
@@ -89,7 +90,7 @@ export default function CardsCarousel() {
         {categories.map((category) => (
           <button
             className="p-2 bg-[#cf5858] text-white rounded-md"
-            onClick={filterHandler}
+            onClick={() => filterHandler}
             key={category}
           >
             {category}

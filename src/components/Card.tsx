@@ -12,7 +12,7 @@ export default function Card({
 }: {
   card: TCard;
   theta: number;
-  cardAngle: any;
+  cardAngle: number;
   idx: number;
   radius: number;
   selectedCard: number;
@@ -65,7 +65,10 @@ export default function Card({
               <h1 className="text-[12px] mb-2">{card.name}</h1>
               <div className="flex justify-between">
                 {card.category.map((category) => (
-                  <div className="text-[8px] bg-red-400 text-center px-1 rounded-sm text-white mr-2 last:mr-0 mb-2">
+                  <div
+                    className="text-[8px] bg-red-400 text-center px-1 rounded-sm text-white mr-2 last:mr-0 mb-2"
+                    key={category}
+                  >
                     {category}
                   </div>
                 ))}

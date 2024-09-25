@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { MouseEvent, useEffect, useState } from "react";
 import Card from "./Card";
 import { BASE_API_URL } from "../../utils/constants";
 
@@ -91,7 +91,7 @@ export default function CardsCarousel() {
         {categories.map((category) => (
           <button
             className="p-2 bg-[#cf5858] text-white rounded-md"
-            onClick={() => filterHandler}
+            onClick={(e: MouseEvent) => filterHandler(e)}
             key={category}
           >
             {category}

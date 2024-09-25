@@ -4,41 +4,53 @@
     "name": "T-money",
     "price": "￦3,000 ~ ￦6,000",
     "img": "/card_imgs/tmoney.png",
-    "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadFrgnGd.dev"
+    "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadFrgnGd.dev",
+    "availableAt": "Convenience stores(GS25,CU,7-ELEVEN, etc)",
+    "transportationCharge": "Top-up"
   },
   {
     "category": ["Transportation"],
     "name": "Cashbee (LOCA Mobilitiy)",
     "price": "￦3,000 ~ ￦6,000",
     "img": "/card_imgs/cashbee.png",
-    "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadFrgnGd.dev"
+    "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadFrgnGd.dev",
+    "availableAt": "Convenience stores(GS25,CU,7-ELEVEN, etc)",
+    "chargeType": "Top-up"
   },
   {
     "category": ["Transportation"],
     "name": "Climate Card",
     "price": "￦3,000",
     "img": "/card_imgs/climate_card.jpg",
-    "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadClmtAcmpCardFrgnGd.dev"
+    "website": "https://english.seoul.go.kr/policy/transportation/climate-card/",
+    "availableAt": "Convenience stores(GS25,CU,7-ELEVEN, etc), Customer Safety Area",
+    "chargeType": "Unlimited use for a period with a one-time fee"
   },
   {
     "category": ["Transportation", "Debit"],
     "name": "WOWPASS",
     "price": "￦0 ~ ￦5,000",
     "img": "/card_imgs/wowpass.png",
-    "website": "https://www.wowpass.io/?lang=en_US"
+    "website": "https://www.wowpass.io/?lang=en_US",
+    "availableAt": "WOWPASS kiosk, Mobile App",
+    "chargeType": "Top-up"
   },
   {
     "category": ["Transportation", "Debit"],
     "name": "NAMANE Card",
     "price": "￦7,000",
     "img": "/card_imgs/namane.png",
-    "website": "https://en.namanecard.com/"
+    "website": "https://en.namanecard.com/",
+    "availableAt": "NAMANE Card vending machine, Mobile App",
+    "chargeType": "Top-up"
   },
   {
     "category": ["Transportation", "City Pass"],
     "name": "Discover Seoul Pass",
-    "price": "￦50,000 ~ ￦90,000",
+    "price": "￦70,000 ~ ￦130,000",
     "img": "/card_imgs/dsp.png",
-    "website": "https://www.discoverseoulpass.com/app/main"
+    "website": "https://www.discoverseoulpass.com/app/main",
+    "availableAt": "The designated sales offices, CU, Online",
+    "chargeType": "Top-up"
   }
 ]

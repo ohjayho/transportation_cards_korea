@@ -73,7 +73,12 @@ export default function Card({
                   </div>
                 ))}
               </div>
-              <h1>{card.price}</h1>
+              <h1 className="mb-2">{card.price}</h1>
+              <h1>
+                <a href={card.website} target="_blank">
+                  Website
+                </a>
+              </h1>
             </div>
           </div>
         </div>

@@ -9,6 +9,7 @@ export type TCard = {
   name: string;
   price: string;
   img: string;
+  website: string;
 };
 
 export default function CardsCarousel() {

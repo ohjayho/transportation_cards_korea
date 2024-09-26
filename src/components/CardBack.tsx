@@ -37,6 +37,10 @@ export default function CardBack({
             <span className="text-[8px]">Charge: </span>
             <span>{card.funds}</span>
           </div>
+          <div>
+            <span className="text-[8px]">Price: </span>
+            <span>{card.price}</span>
+          </div>
           <div className="flex justify-end self-end">
             <a
               href={card.website}

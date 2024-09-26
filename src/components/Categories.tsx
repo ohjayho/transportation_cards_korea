@@ -7,7 +7,7 @@ export default function Categories({
 }) {
   const categories = [
     ["Transportation", "#00347870"],
-    ["Debit", "#c60c317070"],
+    ["Debit", "#29737370"],
     ["City Pass", "#c60c3170"]
   ];
   return (

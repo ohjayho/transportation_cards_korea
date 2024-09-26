@@ -11,9 +11,9 @@ export default function Buttons({
 }) {
   return (
     <>
-      <div className="w-[200px] h-[40px] flex justify-between mt-[340px] z-10">
+      <div className="w-[200px] h-[40px] flex justify-between mt-10 z-10">
         <button
-          className={`w-20 p-1 rounded-md text-white bg-[#00347870] ${
+          className={`w-20 p-1 rounded-md text-white bg-[#003478d7] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={prevHandler}
@@ -21,7 +21,7 @@ export default function Buttons({
           Previous
         </button>
         <button
-          className={`w-20 p-1 rounded-md text-white bg-[#c60c3170] ${
+          className={`w-20 p-1 rounded-md text-white bg-[#c60c31d7] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={nextHandler}

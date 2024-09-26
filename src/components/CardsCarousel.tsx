@@ -23,7 +23,7 @@ export default function CardsCarousel() {
   const [radius, setRadius] = useState(0);
   const [selectedCard, setSelectedCard] = useState(0); //state for enabling flipping card
   const [animationEnable, setAnimationEnable] = useState(true);
-  const width = 210;
+  const width = 260;
 
   useEffect(() => {
     const fetchCards = async () => {
@@ -86,18 +86,23 @@ export default function CardsCarousel() {
     setSelectedCard(0);
   };
 
-  const categories = ["Transportation", "Debit", "City Pass"];
+  const categories = [
+    ["Transportation", "#00aeac"],
+    ["Debit", "#00a8e1"],
+    ["City Pass", "#b0b7bc"]
+  ];
 
   return (
     <>
       <section className="flex justify-between w-[300px] mt-10">
         {categories.map((category) => (
           <button
-            className="p-2 bg-[#cf5858] text-white rounded-md"
+            className="p-2 rounded-md border"
+            style={{ color: category[1], borderColor: category[1] }}
             onClick={(e: MouseEvent) => filterHandler(e)}
-            key={category}
+            key={category[0]}
           >
-            {category}
+            {category[0]}
           </button>
         ))}
       </section>
@@ -123,13 +128,14 @@ export default function CardsCarousel() {
                 radius={radius}
                 key={idx}
                 selectedCard={selectedCard}
+                width={width}
               />
             ))}
         </div>
       </div>
-      <div className="w-[200px] h-[40px] flex justify-between mt-[280px]">
+      <div className="w-[200px] h-[40px] flex justify-between mt-[300px]">
         <button
-          className={`w-20 p-1 rounded-md border border-sky-100 bg-[#fafafa] ${
+          className={`w-20 p-1 rounded-md text-white bg-[#00347870] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={prevHandler}
@@ -137,7 +143,7 @@ export default function CardsCarousel() {
           Previous
         </button>
         <button
-          className={`w-20 p-1 rounded-md border border-sky-100 bg-[#fafafa] ${
+          className={`w-20 p-1 rounded-md text-white bg-[#c60c3170] ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={nextHandler}

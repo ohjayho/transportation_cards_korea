@@ -30,10 +30,9 @@ export default function Card({
   return (
     <>
       <div
-        className={`absolute w-[${
-          width - 20
-        }px] h-[120px] left-[10px] top-[10px] duration-500 rounded-md`}
+        className={`absolute h-[140px] left-[10px] top-[10px] duration-500 rounded-md`}
         style={{
+          width: `${width - 20}px`,
           transform: `rotateY(${
             idx * theta
           }deg) translateZ(${radius}px) rotateY(${

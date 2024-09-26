@@ -25,7 +25,18 @@ export default function CardsCarousel() {
   const [radius, setRadius] = useState(0);
   const [selectedCard, setSelectedCard] = useState(0); //state for enabling flipping card
   const [animationEnable, setAnimationEnable] = useState(true);
-  const width = 260;
+  // const width = 260; //width should be here because of the carousel calculation
+  const [width, setWidth] = useState(250);
+
+  useEffect(() => {
+    const updateWidth = () => {
+      const newWidth =
+        window.innerWidth <= 450 ? window.innerWidth * 0.55 : 250;
+      setWidth(newWidth);
+    };
+    updateWidth();
+    window.addEventListener("resize", updateWidth);
+  }, []);
 
   useEffect(() => {
     const fetchCards = async () => {
@@ -92,8 +103,12 @@ export default function CardsCarousel() {
     <>
       <Categories filterHandler={filterHandler} />
       <div
-        className={`relative [perspective:900px] [perspective-origin:center_10%] flex justify-center pt-16`}
-        style={{ width: width, height: "500px" }}
+        className={`relative [perspective:900px] [perspective-origin:center_-5%] flex justify-center6 mt-5`}
+        style={{
+          width: width,
+          height: "200px",
+          marginBottom: `${width * 0.5}px`
+        }}
       >
         <div
           className={`w-full h-full absolute [transform-style:preserve-3d] ${
@@ -117,12 +132,12 @@ export default function CardsCarousel() {
               />
             ))}
         </div>
-        <Buttons
-          prevHandler={prevHandler}
-          nextHandler={nextHandler}
-          cards={cards}
-        />
       </div>
+      <Buttons
+        prevHandler={prevHandler}
+        nextHandler={nextHandler}
+        cards={cards}
+      />
     </>
   );
 }

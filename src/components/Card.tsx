@@ -30,9 +30,10 @@ export default function Card({
   return (
     <>
       <div
-        className={`absolute h-[140px] left-[10px] top-[10px] duration-500 rounded-md`}
+        className={`absolute left-[10px] top-[10px] duration-500 rounded-md`}
         style={{
           width: `${width - 20}px`,
+          height: `${width * 0.57}px`,
           transform: `rotateY(${
             idx * theta
           }deg) translateZ(${radius}px) rotateY(${
@@ -51,7 +52,7 @@ export default function Card({
         >
           <Image
             src={card.img}
-            width={300}
+            width={400}
             height={300}
             alt={card.name}
             className="w-full h-full absolute [backface-visibility:hidden] transition-transform duration-1000 object-cover rounded-md [image-rendering:optimizeQuality]"

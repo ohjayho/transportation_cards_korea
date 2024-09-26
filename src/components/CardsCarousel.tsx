@@ -3,6 +3,7 @@
 import { MouseEvent, useEffect, useState } from "react";
 import Card from "./Card";
 import { BASE_API_URL } from "../../utils/constants";
+import Buttons from "./Buttons";
 
 export type TCard = {
   category: Array<string>;
@@ -87,18 +88,18 @@ export default function CardsCarousel() {
   };
 
   const categories = [
-    ["Transportation", "#00aeac"],
-    ["Debit", "#00a8e1"],
-    ["City Pass", "#b0b7bc"]
+    ["Transportation", "#00347870"],
+    ["Debit", "#c60c317070"],
+    ["City Pass", "#c60c3170"]
   ];
 
   return (
     <>
-      <section className="flex justify-between w-[300px] mt-10">
+      <section className="flex justify-between w-[300px] mt-10 text-white">
         {categories.map((category) => (
           <button
-            className="p-2 rounded-md border"
-            style={{ color: category[1], borderColor: category[1] }}
+            className="p-2 rounded-md"
+            style={{ backgroundColor: category[1] }}
             onClick={(e: MouseEvent) => filterHandler(e)}
             key={category[0]}
           >
@@ -107,8 +108,8 @@ export default function CardsCarousel() {
         ))}
       </section>
       <div
-        className={`relative [perspective:900px] [perspective-origin:center_10%] flex pt-16`}
-        style={{ width: width, height: "100px" }}
+        className={`relative [perspective:900px] [perspective-origin:center_10%] flex justify-center pt-16`}
+        style={{ width: width, height: "500px" }}
       >
         <div
           className={`w-full h-full absolute [transform-style:preserve-3d] ${
@@ -132,24 +133,11 @@ export default function CardsCarousel() {
               />
             ))}
         </div>
-      </div>
-      <div className="w-[200px] h-[40px] flex justify-between mt-[300px]">
-        <button
-          className={`w-20 p-1 rounded-md text-white bg-[#00347870] ${
-            cards.length === 1 ? "hidden" : ""
-          }`}
-          onClick={prevHandler}
-        >
-          Previous
-        </button>
-        <button
-          className={`w-20 p-1 rounded-md text-white bg-[#c60c3170] ${
-            cards.length === 1 ? "hidden" : ""
-          }`}
-          onClick={nextHandler}
-        >
-          Next
-        </button>
+        <Buttons
+          prevHandler={prevHandler}
+          nextHandler={nextHandler}
+          cards={cards}
+        />
       </div>
     </>
   );

@@ -4,6 +4,7 @@ import { MouseEvent, useEffect, useState } from "react";
 import Card from "./Card";
 import { BASE_API_URL } from "../../utils/constants";
 import Buttons from "./Buttons";
+import Categories from "./Categories";
 
 export type TCard = {
   category: Array<string>;
@@ -87,26 +88,9 @@ export default function CardsCarousel() {
     setSelectedCard(0);
   };
 
-  const categories = [
-    ["Transportation", "#00347870"],
-    ["Debit", "#c60c317070"],
-    ["City Pass", "#c60c3170"]
-  ];
-
   return (
     <>
-      <section className="flex justify-between w-[300px] mt-10 text-white">
-        {categories.map((category) => (
-          <button
-            className="p-2 rounded-md"
-            style={{ backgroundColor: category[1] }}
-            onClick={(e: MouseEvent) => filterHandler(e)}
-            key={category[0]}
-          >
-            {category[0]}
-          </button>
-        ))}
-      </section>
+      <Categories filterHandler={filterHandler} />
       <div
         className={`relative [perspective:900px] [perspective-origin:center_10%] flex justify-center pt-16`}
         style={{ width: width, height: "500px" }}

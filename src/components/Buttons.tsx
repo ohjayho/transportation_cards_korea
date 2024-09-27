@@ -11,22 +11,22 @@ export default function Buttons({
 }) {
   return (
     <>
-      <div className="w-[200px] h-[40px] flex justify-between mt-10 z-10">
+      <div className="w-[200px] h-[40px] flex justify-between mt-3 max-sm:-mt-2 z-10">
         <button
-          className={`w-20 p-1 rounded-md text-white bg-[#003478d7] ${
+          className={`w-14 h-14 rounded-full text-white text-2xl bg-neutral-700 border border-gray-800 ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={prevHandler}
         >
-          Previous
+          {"◀"}
         </button>
         <button
-          className={`w-20 p-1 rounded-md text-white bg-[#c60c31d7] ${
+          className={`w-14 h-14 rounded-full text-white text-2xl bg-neutral-700 border border-gray-800 ${
             cards.length === 1 ? "hidden" : ""
           }`}
           onClick={nextHandler}
         >
-          Next
+          {"▶"}
         </button>
       </div>
     </>

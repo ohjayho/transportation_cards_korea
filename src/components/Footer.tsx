@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <span className="text-white">
             <a href="https://github.com/ohjayho" target="_blank">
-              Github
+              GitHub
             </a>
             {" | "}
           </span>

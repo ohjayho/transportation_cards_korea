@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <div className="w-full flex flex-col items-center absolute bottom-0 py-5 max-sm:py-1">
+      <div className="w-full flex flex-col items-center py-5 max-sm:py-1">
         <div>
           <span className="text-white">
             <a href="https://github.com/ohjayho" target="_blank">
@@ -12,7 +12,7 @@ export default function Footer() {
           <span className="text-white">ohjayhoi@gmail.com</span>
         </div>
         <span className="text-white">
-          image:{" "}
+          Image:{" "}
           <a href="https://unsplash.com/ko/@zerotake?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
             zero take from
           </a>

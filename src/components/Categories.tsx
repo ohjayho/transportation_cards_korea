@@ -8,12 +8,11 @@ export default function Categories({
   const categories = [
     ["Transportation", "red"],
     ["Debit", "green"],
-    ["City Pass", "blue"],
-    ["Discounts", "purple"]
+    ["City Pass", "blue"]
   ];
   return (
     <>
-      <div className="flex justify-between w-[500px] mt-10">
+      <div className="flex justify-between w-[370px] mt-10">
         {categories.map((category) => (
           <button
             className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-xl text-md font-medium border border-gray-200 bg-white text-gray-800 shadow-sm dark:bg-neutral-900 dark:border-neutral-700 dark:text-white"

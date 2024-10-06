@@ -10,7 +10,7 @@
   },
   {
     "category": ["Transportation"],
-    "name": "Cashbee (LOCA Mobilitiy)",
+    "name": "Cashbee (LOCA, ezl)",
     "price": "￦3,000 ~ ￦6,000",
     "img": "/card_imgs/cashbee.png",
     "website": "https://www.t-money.co.kr/ncs/pct/ugd/ReadFrgnGd.dev",
@@ -52,5 +52,14 @@
     "website": "https://www.discoverseoulpass.com/app/main",
     "availableAt": "The designated sales offices, CU, Online",
     "funds": "Top-up, One-time fee(Pass)"
+  },
+  {
+    "category": ["Transportation", "Discounts"],
+    "name": "Korea Tour Card",
+    "price": "￦4,000",
+    "img": "/card_imgs/ktc.png",
+    "website": "https://vkc.or.kr/en/main-project/korea-tour-card/",
+    "availableAt": "Airports, Convenience stores, Vending machines in subways, banks, etc",
+    "funds": "Top-up"
   }
 ]

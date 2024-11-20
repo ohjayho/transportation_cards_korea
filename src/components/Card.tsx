@@ -6,7 +6,7 @@ import CardBack from "./CardBack";
 export default function Card({
   card,
   theta,
-  cardAngle,
+  // cardAngle,
   idx,
   radius,
   selectedCard,
@@ -14,7 +14,7 @@ export default function Card({
 }: {
   card: TCard;
   theta: number;
-  cardAngle: number;
+  // cardAngle: number;
   idx: number;
   radius: number;
   selectedCard: number;

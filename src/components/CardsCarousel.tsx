@@ -20,7 +20,7 @@ export default function CardsCarousel() {
   const [initialCards, setInitialCards] = useState<TCard[]>([]);
   const [cards, setCards] = useState<TCard[]>([]);
   const [carouselAngle, setCarouselAngle] = useState(0);
-  const [cardAngle, setCardAngle] = useState(0);
+  // const [cardAngle, setCardAngle] = useState(0);
   const [theta, setTheta] = useState(0);
   const [radius, setRadius] = useState(0);
   const [selectedCard, setSelectedCard] = useState(0); //state for enabling flipping card
@@ -60,7 +60,7 @@ export default function CardsCarousel() {
   const prevHandler = () => {
     setAnimationEnable(true);
     setCarouselAngle((prevAngle) => prevAngle + theta);
-    setCardAngle((prev) => prev - theta);
+    // setCardAngle((prev) => prev - theta);
     setSelectedCard((prevCard) =>
       prevCard - 1 < 0 ? cards.length - 1 : prevCard - 1
     );
@@ -69,7 +69,7 @@ export default function CardsCarousel() {
   const nextHandler = () => {
     setAnimationEnable(true);
     setCarouselAngle((prevAngle) => prevAngle - theta);
-    setCardAngle((prev) => prev + theta);
+    // setCardAngle((prev) => prev + theta);
     setSelectedCard((prevCard) =>
       prevCard + 1 > cards.length - 1 ? 0 : prevCard + 1
     );
@@ -94,7 +94,7 @@ export default function CardsCarousel() {
       Math.round(width / 2 / Math.tan(Math.PI / countCards))
     );
     setAnimationEnable(false);
-    setCardAngle(0);
+    // setCardAngle(0);
     setCarouselAngle(0);
     setSelectedCard(0);
   };
@@ -123,7 +123,7 @@ export default function CardsCarousel() {
               <Card
                 card={card}
                 theta={theta}
-                cardAngle={cardAngle}
+                // cardAngle={cardAngle}
                 idx={idx}
                 radius={radius}
                 key={idx}

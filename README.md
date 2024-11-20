@@ -18,15 +18,15 @@ This website introduces transportation cards for tourists in Korea to make the c
 
 **3D Carousel**
 
-![녹화_2024_11_13_00_58_19_561](https://github.com/user-attachments/assets/9cd160ff-c2aa-4470-a202-9e416f760d45)
+![녹화_2024_11_21_02_04_52_829](https://github.com/user-attachments/assets/30445ef7-855e-4593-a247-099866611876)
 
 **Categories**
-![녹화_2024_11_13_00_52_33_682](https://github.com/user-attachments/assets/7226f3d1-4165-4118-b882-7096648de2ce)
 
+![녹화_2024_11_21_02_06_09_876](https://github.com/user-attachments/assets/8a57ae4b-85f0-4dab-adcb-32c3ec3894b7)
 
 **Card Info**
 
-![녹화_2024_11_13_00_52_59_143](https://github.com/user-attachments/assets/73742b20-e286-40fb-9102-50790a23baa0)
+![녹화_2024_11_21_02_07_00_567](https://github.com/user-attachments/assets/632ce2db-05f5-4352-aedd-3c21da29da0b)
 
 ## Tech Stack
 

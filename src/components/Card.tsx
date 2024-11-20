@@ -34,11 +34,7 @@ export default function Card({
         style={{
           width: `${width - 20}px`,
           height: `${width * 0.57}px`,
-          transform: `rotateY(${
-            idx * theta
-          }deg) translateZ(${radius}px) rotateY(${
-            -idx * theta
-          }deg) rotateY(${cardAngle}deg)`
+          transform: `rotateY(${idx * theta}deg) translateZ(${radius}px)`
         }}
         key={card.name}
       >

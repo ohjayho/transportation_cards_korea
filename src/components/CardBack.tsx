@@ -41,7 +41,7 @@ export default function CardBack({
             <span className="max-sm:text-[7px] text-[8px]">Price: </span>
             <span className="max-sm:text-[7px]">{card.price}</span>
           </div>
-          <div className="flex justify-end self-end">
+          <div className="self-end">
             <a
               href={card.website}
               target="_blank"
